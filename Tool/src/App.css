@@ -1,0 +1,237 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.App-header {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.feature-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.feature-container h2 {
+  margin-top: 0;
+  color: #34495e;
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.results {
+  margin-top: 20px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.copy-btn {
+  background-color: #7f8c8d;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+.copy-btn:hover {
+  background-color: #95a5a6;
+}
+
+.results h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.results ul {
+  padding-left: 20px;
+}
+
+.results pre {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Tables */
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+.table thead th {
+  text-align: left;
+  background: #f2f5f8;
+  color: #2c3e50;
+  padding: 10px;
+  border-bottom: 1px solid #e1e7ef;
+}
+.table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #eef2f6;
+}
+.table tbody tr:nth-child(odd) {
+  background: #fbfdff;
+}
+.table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Chips / badges */
+.chip {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  border: 1px solid transparent;
+}
+.chip.success { background:#eafaf1; color:#2c7a4b; border-color:#c9f0da; }
+.chip.warn    { background:#fff8e6; color:#8c6d1f; border-color:#f6e5b4; }
+.chip.info    { background:#e9f2ff; color:#1d4e89; border-color:#cfe3ff; }
+.chip.danger  { background:#fdecea; color:#b23b3b; border-color:#f5c6c4; }
+
+.chip.p0 { background:#fdecea; color:#b23b3b; border-color:#f5c6c4; }
+.chip.p1 { background:#fff8e6; color:#8c6d1f; border-color:#f6e5b4; }
+.chip.p2 { background:#e9f2ff; color:#1d4e89; border-color:#cfe3ff; }
+
+.pill {
+  display:inline-block;
+  padding:2px 6px;
+  border-radius:6px;
+  background:#eef2f6;
+  color:#2c3e50;
+  font-size:0.8rem;
+}
+
+/* --- Enhanced UI additions --- */
+.subtitle {
+  margin: 6px 0 16px 0;
+  color: #6b7a89;
+}
+
+.tabs {
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tab {
+  background: #eef2f6;
+  border: 1px solid #d6dde6;
+  color: #2c3e50;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #3498db;
+  border-color: #3498db;
+  color: #fff;
+}
+
+.btn-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  background-color: #7f8c8d;
+}
+
+.btn-secondary:hover {
+  background-color: #6c7a7b;
+}
+
+.muted {
+  color: #7a8a99;
+  font-size: 0.85rem;
+}
+
+.alert {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #f3c2c2;
+  background: #fff1f1;
+  color: #b03535;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-top-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.footer {
+  text-align: center;
+  color: #7a8a99;
+}
